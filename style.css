@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(32, 86, 95);
+}
+
+.logo{
+    margin-top: 4px;
+    padding-bottom: 3px;
+    height: 7em;
+    border-radius: 50%;
+}
+
+.carrito{
+    height: 4em;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
