@@ -1,7 +1,6 @@
 let d = document
 let resultado
 let busqueda = d.getElementById("busqueda")
-let menu = d.getElementById("menu")
 let containerCatalogo = d.getElementById("peliculas")
 let peliculas = [
     {id: 1,nombre: "juego del miedo", genero: "terror", top: 4},
@@ -16,22 +15,18 @@ let peliculas = [
     {id: 10,nombre: "star wars", genero: "ciencia ficcion", top: 1}
 ]
 
+
 //////////////////////// MAIN ////////////////////////////
 
-let peliculasJSON = JSON.stringify(peliculas)
-localStorage.setItem("peliculas", peliculasJSON)
-
-peliculas = JSON.parse(peliculasJSON)
+let usuario = parseInt(prompt("ingrese su edad"))
+usuario > 18 ? console.log("usted puede ver peliculas categoria R") : console.log("no puede ver peliculas categoria R")
 
 let catologo = d.getElementById("catalogo")
 catologo.addEventListener("click",mostrarCatalogo)
 
-
-
-
 let bus = d.createElement("div")
 bus.innerHTML = `
-<input type= text id= "buscar" input>
+<input type= text id= "buscar" placeholder="search">
 `
 busqueda.append(bus)
 
@@ -52,26 +47,29 @@ function busquedaP(e) {
     <p>Top: ${resultado.top}</p>
     <br>
     `
-    
     containerCatalogo.append(resultadoFinal)
 }    
 
 function mostrarCatalogo() {
-    containerCatalogo.innerHTML = ""
-    peliculas.sort(function(a, b) {
-        return a.top - b.top
-    })
-    for (const peli of peliculas) {
+        containerCatalogo.innerHTML = ""
+        peliculas.sort(function(a, b) {
+            return a.top - b.top
+        })
         let listadoPeli = d.createElement("div")
-        listadoPeli.className = "pelicula"
+        listadoPeli.className = "container-grid"
         listadoPeli.innerHTML = `
-        <p>Nombre: ${peli.nombre}</p>
-        <p>Genero: ${peli.genero}</p>
-        <p>Top: ${peli.top}</p>
-        <br>
+        <div class="caja star-wars"></div>
+        <div class="caja venom"></div>
+        <div class="caja alladin"></div>
+        <div class="caja mision-imposible"></div>
+        <div class="caja sueño-posible"></div>
+        <div class="caja gladiador"></div>
+        <div class="caja eternals"></div>
+        <div class="caja nadie"></div>
+        <div class="caja resident-evil"></div>
+        <div class="caja juego-miedo"></div>
         `
         containerCatalogo.append(listadoPeli)
-    }
 }
 
 

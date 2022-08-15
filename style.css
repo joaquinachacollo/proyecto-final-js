@@ -1,6 +1,178 @@
-.pelicula{
-    background-color: blanchedalmond;
-    width: 120px;
-    height: 150px;
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
 }
+
+/* header */
+header{
+    background-color: rgb(44, 76, 95);
+}
+
+.container-header{
+    padding: 5px 0;
+    margin-left: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.titulo{
+    color: rgb(226, 224, 224);
+    font-size: 45px;
+    font-weight:bolder;
+    text-transform: capitalize;
+    text-shadow: 2px 5px #000;
+}
+
+.logo{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.buscador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buscar{
+    height: 29px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 8px 0;
+    outline: none;
+    
+}
+
+#buscar:focus{
+    border-color: rgb(38, 156, 177);
+    box-shadow: 0 0 8px 0 rgb(38, 156, 177);
+}
+
+.img-boton{
+    width: 20px;
+    height: 20px;
+}
+
+button{
+    height: 30px;
+    width: 80px;
+    color: #fff;
+    font-size: 15px;
+    background-color: rgb(165, 40, 40);
+}
+
+.container-catalogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 76, 95);
+}
+
+#catalogo{
+    height: 40px;
+    width: 82px;
+}
+/* fin header */
+
+/* main */
+
+main{
+    background-image: url(imagenes/Fondo-de-pantalla-Abstracto-101\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 15px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+
+.star-wars{
+    background-image: url(imagenes/star\ wars.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.venom{
+    background-image: url(imagenes/Venom-824559573-large.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nadie{
+    background-image: url(imagenes/Nadie-793040499-large.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.gladiador{
+    background-image: url(imagenes/gladiator-II.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.juego-miedo{
+    background-image: url(imagenes/Juegodelmiedo2saw2.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.alladin{
+    background-image: url(imagenes/alladin.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mision-imposible{
+    background-image: url(imagenes/MI.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sueño-posible{
+    background-image: url(imagenes/SP.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.eternals{
+    background-image: url(imagenes/eternals.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.resident-evil{
+    background-image: url(imagenes/resident\ evil.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.caja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+
+}
+
+/* fin main */
+
+
+
+
+
+
 
