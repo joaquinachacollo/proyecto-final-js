@@ -18,12 +18,27 @@ let peliculas = [
 
 //////////////////////// MAIN ////////////////////////////
 
-let usuario = parseInt(prompt("ingrese su edad"))
-usuario > 18 ? console.log("usted puede ver peliculas categoria R") : console.log("no puede ver peliculas categoria R")
+// verificacion de edad
+let usuario =  
+    Swal.fire({
+    title: 'usted es mayor de edad?',
+    width: 500,
+    showDenyButton: true,
+    confirmButtonText: 'Si',
+    denyButtonText: `No`,
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire('Puede ver peliculas de catagoria R ', '', 'info')
+    } else if (result.isDenied) {
+      Swal.fire('No pueder ver peliculas de categoria R', '', 'info')
+    }
+  })
 
+// ver catalogo
 let catologo = d.getElementById("catalogo")
 catologo.addEventListener("click",mostrarCatalogo)
 
+// busqueda
 let bus = d.createElement("div")
 bus.innerHTML = `
 <input type= text id= "buscar" placeholder="search">
