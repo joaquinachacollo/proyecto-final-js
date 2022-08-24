@@ -101,64 +101,32 @@ main{
     padding: 10px 10px;
 }
 
-.star-wars{
-    background-image: url(imagenes/star\ wars.jpg);
+.fondo-pelis{
+    height: 700px;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-position: center ;
     background-size: cover;
-    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
-.venom{
-    background-image: url(imagenes/Venom-824559573-large.jpg);
-    background-size: cover;
-    background-position: center;
+.container-ver{
+    background-color: rgb(165, 40, 40);
+    border-radius: 10px;
+    height: 40px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.nadie{
-    background-image: url(imagenes/Nadie-793040499-large.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.gladiador{
-    background-image: url(imagenes/gladiator-II.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.juego-miedo{
-    background-image: url(imagenes/Juegodelmiedo2saw2.webp);
-    background-size: cover;
-    background-position: center;
-}
-
-.alladin{
-    background-image: url(imagenes/alladin.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.mision-imposible{
-    background-image: url(imagenes/MI.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.sueño-posible{
-    background-image: url(imagenes/SP.webp);
-    background-size: cover;
-    background-position: center;
-}
-
-.eternals{
-    background-image: url(imagenes/eternals.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.resident-evil{
-    background-image: url(imagenes/resident\ evil.jpg);
-    background-size: cover;
-    background-position: center;
+.ver{
+    text-decoration: none;
+    color: #fff;
+    
 }
 
 .caja{
@@ -173,8 +141,17 @@ main{
 
 /* section */
 section{
-    background-color: rgb(233, 21, 21);
+    background-image: url(imagenes/Fondo-de-pantalla-Abstracto-101\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
+
+p{
+    color:#fff;
+}
+
 
 
 

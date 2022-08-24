@@ -1,0 +1,12 @@
+[
+    {"id": 1, "nombre": "juego del miedo", "genero": "terror", "top": 4, "imagen":"./imagenes/Juegodelmiedo2saw2.webp"},
+    {"id": 2, "nombre": "alladin", "genero": "infantil", "top": 10, "imagen":"./imagenes/alladin.jpg"},
+    {"id": 3, "nombre": "mision imposible", "genero": "accion", "top": 6, "imagen":"./imagenes/MI.jpg"},
+    {"id": 4, "nombre": "un sueño posible", "genero": "drama", "top": 7, "imagen":"./imagenes/SP.webp"},
+    {"id": 5, "nombre": "gladiador", "genero": "aventura", "top": 5, "imagen":"./imagenes/gladiator-II.jpg"},
+    {"id": 6, "nombre": "venom", "genero": "ciencia ficcion", "top": 2, "imagen":"./imagenes/Venom-824559573-large.jpg"},
+    {"id": 7, "nombre": "eternals", "genero": "ciencia ficcion", "top": 8, "imagen":"./imagenes/eternals.jpg"},
+    {"id": 8, "nombre": "resident evil", "genero": "terror", "top": 9, "imagen":"./imagenes/resint.jpg"},
+    {"id": 9, "nombre": "nadie", "genero": "accion", "top": 3, "imagen":"./imagenes/Nadie-793040499-large.jpg"},
+    {"id": 10, "nombre": "star wars", "genero": "ciencia ficcion", "top": 1, "imagen":"./imagenes/Star-Wars-Episode-III.webp"}
+]
