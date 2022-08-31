@@ -44,13 +44,29 @@ buscar.addEventListener("change", busquedaP)
 
 function busquedaP(e) {
     busqueda_res.innerHTML = ""
-    resultado = peliculas.find(pelicula => pelicula.nombre == e.target.value)
     let resultadoFinal = d.createElement("div")
     resultadoFinal.className = "pelicula"
+    fetch("./data.json")
+        .then((res) => res.json())
+        .then((data) => {
+          data.forEach(peliculas =>{
+            resultado = peliculas.find(pelicula => pelicula.nombre == e.target.value)
+            let search = d.createElement("div")
+            search.className = "fondo-pelis"
+            search.setAttribute("style", `background-image: url(${pelicula.imagen});`)
+            resultadoFinal.append(search)
+            search.innerHTML = ` 
+              <div class="container-ver">
+                <a class="ver" href="./compra/compra.html">comprar</a>
+              </div>
+            `
+            busqueda_res.append(resultadoFinal)
+          })
+        })
     
-
-    busqueda_res.append(resultadoFinal)
 }    
+
+
 
 function mostrarCatalogo() {
         containerCatalogo.innerHTML = ""
@@ -60,13 +76,13 @@ function mostrarCatalogo() {
         .then((res) => res.json())
         .then((data) => {
           data.forEach(peliculas => {
-            let fondo = d.createElement("div")
+          let fondo = d.createElement("div")
           fondo.className = "fondo-pelis"
           fondo.setAttribute("style", `background-image: url(${peliculas.imagen});`)
           listadoPeli.append(fondo)
           fondo.innerHTML = `
           <div class="container-ver">
-            <a class="ver" href="compra.html">comprar</a>
+            <a class="ver" href="./compra/compra.html">comprar</a>
           </div>
           
           `
@@ -77,4 +93,9 @@ function mostrarCatalogo() {
 
 
 
+    
+    
+    
+
+    
 
