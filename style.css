@@ -4,6 +4,14 @@
     font-family: sans-serif;
 }
 
+body{
+    background-image: url(imagenes/Fondo-de-pantalla-Abstracto-101\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
 /* header */
 header{
     background-color: rgb(46, 91, 121);
@@ -148,7 +156,6 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
 }
 
 p{

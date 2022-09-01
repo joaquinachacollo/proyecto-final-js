@@ -3,6 +3,18 @@ let resultado
 let busqueda = d.getElementById("busqueda")
 let containerCatalogo = d.getElementById("peliculas")
 let busqueda_res = d.getElementById("busqueda-res")
+let peliculas = [
+    {id: 1, nombre: "juego del miedo", genero: "terror", top: 4, imagen:"./imagenes/Juegodelmiedo2saw2.webp"},
+    {id: 2, nombre: "alladin", genero: "infantil", top: 10, imagen:"./imagenes/alladin.jpg"},
+    {id: 3, nombre: "mision imposible", genero: "accion", top: 6, imagen:"./imagenes/MI.jpg"},
+    {id: 4, nombre: "un sueño posible", genero: "drama", top: 7, imagen:"./imagenes/SP.webp"},
+    {id: 5, nombre: "gladiador", genero: "aventura", top: 5, imagen:"./imagenes/gladiator-II.jpg"},
+    {id: 6, nombre: "venom", genero: "ciencia ficcion", top: 2, imagen:"./imagenes/Venom-824559573-large.jpg"},
+    {id: 7, nombre: "eternals", genero: "ciencia ficcion", top: 8, imagen:"./imagenes/eternals.jpg"},
+    {id: 8, nombre: "resident evil", genero: "terror", top: 9, imagen:"./imagenes/resint.jpg"},
+    {id: 9, nombre: "nadie", genero: "accion", top: 3, imagen:"./imagenes/Nadie-793040499-large.jpg"},
+    {id: 10, nombre: "star wars", genero: "ciencia ficcion", top: 1, imagen:"./imagenes/Star-Wars-Episode-III.webp"}
+]
 
 //////////////////////// MAIN ////////////////////////////
 
@@ -46,23 +58,43 @@ function busquedaP(e) {
     busqueda_res.innerHTML = ""
     let resultadoFinal = d.createElement("div")
     resultadoFinal.className = "pelicula"
-    fetch("./data.json")
-        .then((res) => res.json())
-        .then((data) => {
-          data.forEach(peliculas =>{
-            resultado = peliculas.find(pelicula => pelicula.nombre == e.target.value)
-            let search = d.createElement("div")
-            search.className = "fondo-pelis"
-            search.setAttribute("style", `background-image: url(${pelicula.imagen});`)
-            resultadoFinal.append(search)
-            search.innerHTML = ` 
-              <div class="container-ver">
-                <a class="ver" href="./compra/compra.html">comprar</a>
-              </div>
-            `
-            busqueda_res.append(resultadoFinal)
-          })
-        })
+    resultado = peliculas.find(pelicula => pelicula.nombre == e.target.value)
+    if (e.target.value === "venom") {
+      let search = d.createElement("div")
+      search.className = "fondo-pelis"
+      search.setAttribute("style", `background-image: url("./imagenes/Venom-824559573-large.jpg");`)
+      resultadoFinal.append(search)
+      search.innerHTML = ` 
+        <div class="container-ver">
+          <a class="ver" href="./compra/compra.html">comprar</a>
+        </div>
+      `
+      busqueda_res.append(resultadoFinal)
+    }
+    else if (e.target.value === "nadie") {
+      let search = d.createElement("div")
+      search.className = "fondo-pelis"
+      search.setAttribute("style", `background-image: url("./imagenes/Nadie-793040499-large.jpg");`)
+      resultadoFinal.append(search)
+      search.innerHTML = ` 
+        <div class="container-ver">
+          <a class="ver" href="./compra/compra.html">comprar</a>
+        </div>
+      `
+      busqueda_res.append(resultadoFinal)
+    }
+    else if (e.target.value === "alladin") {
+      let search = d.createElement("div")
+      search.className = "fondo-pelis"
+      search.setAttribute("style", `background-image: url("./imagenes/alladin.jpg");`)
+      resultadoFinal.append(search)
+      search.innerHTML = ` 
+        <div class="container-ver">
+          <a class="ver" href="./compra/compra.html">comprar</a>
+        </div>
+      `
+      busqueda_res.append(resultadoFinal)
+    }
     
 }    
 
@@ -72,23 +104,19 @@ function mostrarCatalogo() {
         containerCatalogo.innerHTML = ""
         let listadoPeli = d.createElement("div")
         listadoPeli.className = "container-grid"
-        fetch("./data.json")
-        .then((res) => res.json())
-        .then((data) => {
-          data.forEach(peliculas => {
-          let fondo = d.createElement("div")
-          fondo.className = "fondo-pelis"
-          fondo.setAttribute("style", `background-image: url(${peliculas.imagen});`)
-          listadoPeli.append(fondo)
-          fondo.innerHTML = `
-          <div class="container-ver">
-            <a class="ver" href="./compra/compra.html">comprar</a>
-          </div>
-          
-          `
-          containerCatalogo.append(listadoPeli)
-          });
-        })        
+        for (const pelicula of peliculas) {
+        let fondo = d.createElement("div")
+        fondo.className = "fondo-pelis"
+        fondo.setAttribute("style", `background-image: url(${pelicula.imagen});`)
+        listadoPeli.append(fondo)
+        fondo.innerHTML = `
+        <div class="container-ver">
+          <a class="ver" href="./compra/compra.html">comprar</a>
+        </div>
+
+        `
+        containerCatalogo.append(listadoPeli)
+        }
 }
 
 
