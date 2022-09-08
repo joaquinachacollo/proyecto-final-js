@@ -73,7 +73,7 @@ main{
 
 .form{
     font-size: 25px;
-    
+    margin-bottom: 15px;
 }
 
 .peli{
@@ -85,7 +85,7 @@ main{
 .inputs{
     padding: 30px;
     background-color: rgb(59, 95, 124);
-    height: 450px;
+    height: 500px;
     width: 400px;
     flex-direction: column;
     display: flex;
@@ -94,19 +94,35 @@ main{
 
 input{
     padding: 10px;
-    margin: 5px;
+    margin-bottom: 15px;
     color: black;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 3px;
     
 }
 
+.container-boton{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+
 .boton{
-    margin-bottom: 5px;
-    height: 30px;
+    
+    height: 50px;
+    width: 100px;
     cursor: pointer;
 }
 
-
+.error{
+    width: 290px;
+    text-align: center;
+    margin: auto;
+    color: #000;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
 
 

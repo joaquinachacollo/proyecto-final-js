@@ -117,26 +117,25 @@ main{
     background-repeat: no-repeat;
     background-position: center ;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: end;
+ 
+    
 }
 
 .container-ver{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 41rem;
+    margin-left: 13.6rem;
     background-color: rgb(165, 40, 40);
     border-radius: 10px;
     height: 40px;
     width: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
 }
 
 .ver{
     text-decoration: none;
     color: #fff;
-    
 }
 
 .caja{
@@ -146,6 +145,7 @@ main{
     height: 650px;
 
 }
+
 
 /* fin main */
 
@@ -161,7 +161,12 @@ p{
     color:#fff;
 }
 
-
+.pelicula{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
 
 
 

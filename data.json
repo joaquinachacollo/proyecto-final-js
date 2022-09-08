@@ -8,7 +8,7 @@
     {"id": 7, "nombre": "eternals", "genero": "ciencia ficcion", "top": 8, "imagen":"./imagenes/eternals.jpg"},
     {"id": 8, "nombre": "resident evil", "genero": "terror", "top": 9, "imagen":"./imagenes/resint.jpg"},
     {"id": 9, "nombre": "nadie", "genero": "accion", "top": 3, "imagen":"./imagenes/Nadie-793040499-large.jpg"},
-    {"id": 10, "nombre": "star wars", "genero": "ciencia ficcion", "top": 1, "imagen":"./imagenes/Star-Wars-Episode-III.webp"}
+    {"id": 10, "nombre": "star wars", "genero": "ciencia ficcion", "top": 1, "imagen":"./imagenes/star-wars.jpg"}
 ]
 
 

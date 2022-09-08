@@ -24,28 +24,31 @@
     <main>
         <div class="container">
 
-            <img class="peli" src="../imagenes/star wars.jpg" alt="">
+            <img class="peli" src="../imagenes/star-wars.jpg" alt="">
             
+            <form action="" id="form" method="post">
                 <div class="inputs">
                     <h3 class="form">Formulario</h3>
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
-                    <input type="text" placeholder="Numero Tarjeta">
-                    <input type="text" placeholder="Pais">
-                    <input type="text" placeholder="Codigo postal">
-                    <input type="text" placeholder="Telefono">
-                    <input type="text" placeholder="Domicilio">
-                    <button class="boton">Comprar</button>
-                    <button class="boton">Alquilar</button>
+                    <input id="name" type="text" placeholder="Nombre">
+                    <input id="aped" type="text" placeholder="Apellido">
+                    <input id="nt" type="text" placeholder="Numero Tarjeta">
+                    <input id="pais" type="text" placeholder="Pais">
+                    <input id="telefono" type="text" placeholder="Telefono">
+                    <div class="container-boton">
+                        <button id="boton" type="submit" class="boton">Comprar</button>
+                    </div>
+                    <p class="error" id="error"></p>
                 </div>
+            </form>
+                
 
         </div>
     </main>
 
 
     
-
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
 
 </body>
 </html>
