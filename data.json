@@ -1,14 +1,14 @@
 [
-    {"id": 1, "nombre": "juego del miedo", "genero": "terror", "top": 4, "imagen":"./imagenes/Juegodelmiedo2saw2.webp"},
-    {"id": 2, "nombre": "alladin", "genero": "infantil", "top": 10, "imagen":"./imagenes/alladin.jpg"},
-    {"id": 3, "nombre": "mision imposible", "genero": "accion", "top": 6, "imagen":"./imagenes/MI.jpg"},
-    {"id": 4, "nombre": "un sueño posible", "genero": "drama", "top": 7, "imagen":"./imagenes/SP.webp"},
-    {"id": 5, "nombre": "gladiador", "genero": "aventura", "top": 5, "imagen":"./imagenes/gladiator-II.jpg"},
-    {"id": 6, "nombre": "venom", "genero": "ciencia ficcion", "top": 2, "imagen":"./imagenes/Venom-824559573-large.jpg"},
-    {"id": 7, "nombre": "eternals", "genero": "ciencia ficcion", "top": 8, "imagen":"./imagenes/eternals.jpg"},
-    {"id": 8, "nombre": "resident evil", "genero": "terror", "top": 9, "imagen":"./imagenes/resint.jpg"},
-    {"id": 9, "nombre": "nadie", "genero": "accion", "top": 3, "imagen":"./imagenes/Nadie-793040499-large.jpg"},
-    {"id": 10, "nombre": "star wars", "genero": "ciencia ficcion", "top": 1, "imagen":"./imagenes/star-wars.jpg"}
+    {"id": 1, "nombre": "juego del miedo", "genero": "terror", "top": 4, "imagen":"./imagenes/Juegodelmiedo2saw2.webp", "link": "./compra/juego.html"},
+    {"id": 2, "nombre": "alladin", "genero": "infantil", "top": 10, "imagen":"./imagenes/alladin.jpg", "link": "./compra/alladin.html"},
+    {"id": 3, "nombre": "mision imposible", "genero": "accion", "top": 6, "imagen":"./imagenes/MI.jpg", "link": "./compra/ms.html"},
+    {"id": 4, "nombre": "un sueño posible", "genero": "drama", "top": 7, "imagen":"./imagenes/SP.webp", "link": "./compra/sp.html"},
+    {"id": 5, "nombre": "gladiador", "genero": "aventura", "top": 5, "imagen":"./imagenes/gladiator-II.jpg", "link": "./compra/gladiador.html"},
+    {"id": 6, "nombre": "venom", "genero": "ciencia ficcion", "top": 2, "imagen":"./imagenes/Venom-824559573-large.jpg", "link": "./compra/venom.html"},
+    {"id": 7, "nombre": "eternals", "genero": "ciencia ficcion", "top": 8, "imagen":"./imagenes/eternals.jpg", "link": "./compra/eternals.html"},
+    {"id": 8, "nombre": "resident evil", "genero": "terror", "top": 9, "imagen":"./imagenes/resint.jpg", "link": "./compra/re.html"},
+    {"id": 9, "nombre": "nadie", "genero": "accion", "top": 3, "imagen":"./imagenes/Nadie-793040499-large.jpg", "link": "./compra/nadie.html"},
+    {"id": 10, "nombre": "star wars", "genero": "ciencia ficcion", "top": 1, "imagen":"./imagenes/star-wars.jpg", "link": "./compra/star-wars.html"}
 ]
 
 

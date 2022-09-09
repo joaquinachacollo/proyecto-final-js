@@ -8,11 +8,12 @@ const parrafo = document.getElementById("error")
 
 const form = document.getElementById("form")
 
-let error = ""
+
 
 form.addEventListener("submit", e=>{
     e.preventDefault()
     let entrar = false
+    let error = ""
     parrafo.innerHTML = ""
     if (nombre.value.length < 6) {
         error += `Nombre (No es valido) <br>`
@@ -39,22 +40,11 @@ form.addEventListener("submit", e=>{
     }
 })
 
-const compra = document.getElementById("boton")
-
+let compra = document.getElementById("boton")
 compra.addEventListener("click", finalcompra)
-
 
 function finalcompra() {
     if (compra.value === error) {
-        Swal.fire({
-            position: 'center',
-            icon: 'error',
-            title: 'complete la informacion',
-            showConfirmButton: false,
-            timer: 1500
-        })
-    }
-    else{
         Swal.fire({
             position: 'center',
             icon: 'success',
@@ -62,7 +52,15 @@ function finalcompra() {
             showConfirmButton: false,
             timer: 1500
         })
+        
     }
+    else{
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'complete la informacion',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }  
 }
-
-

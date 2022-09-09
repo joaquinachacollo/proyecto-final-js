@@ -1,5 +1,4 @@
 let d = document
-let resultado
 let busqueda = d.getElementById("busqueda")
 let containerCatalogo = d.getElementById("peliculas")
 let peliculas
@@ -35,35 +34,35 @@ function mostrarCatalogo() {
     listadoPeli.append(fondo)
     fondo.innerHTML = `
         <div class="container-ver">
-          <a href="./compra/star-wars.html" class="ver">comprar</a>
+          <a href="${pelicula.link}" class="ver">comprar</a>
         </div>
         `
-    containerCatalogo.append(listadoPeli)
+      containerCatalogo.append(listadoPeli)
   }
 }
 
 
 
-// verificacion de edad
-/*
-let usuario = localStorage.getItem("verificacion")
 
-localStorage.setItem("verificacion",
-Swal.fire({
+
+// verificacion de edad
+
+/*Swal.fire({
   title: 'usted es mayor de edad?',
   width: 500,
   showDenyButton: true,
   confirmButtonText: 'Si',
   denyButtonText: `No`,
-}).then((result) => {
+})
+.then((result) => {
   if (result.isConfirmed) {
     Swal.fire('Puede ver peliculas de catagoria R ', '', 'info')
   } else if (result.isDenied) {
     Swal.fire('No pueder ver peliculas de categoria R', '', 'info')
   }
 })
-)
 */
+
 
 
 
